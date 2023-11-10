@@ -1,0 +1,2 @@
+
+INSERT INTO presensis (id, name, email, type, synchronize, created_at, updated_at) VALUES (20, 'LATENCY', 'latency@gmail.com', 'in', true, '2023-11-08 08:25:55+00', '2023-11-08 08:25:55+00');

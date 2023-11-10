@@ -9,9 +9,6 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
-Route::get('/data', [DashboardController::class, 'data']);
-Route::get('/data-dht22', [DashboardController::class, 'dht22']);
-Route::get('/data-mq2', [DashboardController::class, 'mq2']);
-Route::get('/data-mq135', [DashboardController::class, 'mq135']);
+Route::get('/presensi', [DashboardController::class, 'presensi']);
 
 Route::get('/script', [PythonController::class, 'runScript']);

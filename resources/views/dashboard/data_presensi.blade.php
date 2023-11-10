@@ -15,22 +15,23 @@
 <div class="main-content">
     <section class="section">
       <div class="section-header">
-        <h1>Item</h1>
+        <h1>Presensi</h1>
         <div class="section-header-breadcrumb">
           <div class="breadcrumb-item active"><a href="/">Dashboard</a></div>
-          <div class="breadcrumb-item">Item</div>
+          <div class="breadcrumb-item">Presensi</div>
         </div>
       </div>
 
       <div class="section-body">
-        <h2 class="section-title">List Item</h2>
+        <h2 class="section-title">Data Presensi</h2>
 
         <div class="row">
           <div class="col-12">
             <div class="card">
-              {{-- <div class="card-header">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-item"><i class="fas fa-plus"></i> Add Item</button>
-              </div> --}}
+              <div class="card-header">
+                <a href="/script" class="btn btn-primary"><i class="fas fa-plus"></i> Get Data Presensi</a>
+                {{-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-item"><i class="fas fa-plus"></i> Add Item</button> --}}
+              </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-striped" id="table-1">
@@ -39,7 +40,9 @@
                         <th class="text-center">
                           #
                         </th>
-                        <th>Data</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Type</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -48,7 +51,9 @@
                         <td>
                             {{ $loop->iteration }}
                         </td>
-                        <td>{{ $data->data }}</td>
+                        <td>{{ $data->name }}</td>
+                        <td>{{ $data->email }}</td>
+                        <td>{{ $data->type }}</td>
                       </tr>
                       @endforeach
                     </tbody>

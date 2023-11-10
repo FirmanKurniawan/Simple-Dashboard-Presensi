@@ -264,7 +264,7 @@
             <li><a class="nav-link" href="/dashboard"><i class="fas fa-fire"></i> <span>Dashboard</span></a></li>
             <li class="menu-header">Magnet</li>
             {{-- <li><a class="nav-link" href="/data"><i class="fas fa-toolbox"></i> <span>Data</span></a></li> --}}
-            <li><a class="nav-link" href="/data-dht22"><i class="fas fa-toolbox"></i> <span>Data Sensor</span></a></li>
+            <li><a class="nav-link" href="/presensi"><i class="fas fa-toolbox"></i> <span>Data Presensi</span></a></li>
             {{-- <li><a class="nav-link" href="/data-mq2"><i class="fas fa-toolbox"></i> <span>Data Sensor MQ 2</span></a></li>
             <li><a class="nav-link" href="/data-mq135"><i class="fas fa-toolbox"></i> <span>Data Sensor MQ 135</span></a></li> --}}
           </ul>
