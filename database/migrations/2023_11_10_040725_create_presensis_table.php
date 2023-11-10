@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mq135_sensors', function (Blueprint $table) {
-            $table->float('carbon_dioxide');
-            $table->float('ion_ammonium');
-            $table->float('toluen');
-            $table->timestamptz('time');
+        Schema::create('presensis', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('division');
+            $table->string('type');
+            $table->string('synchronize')->nullable()->default('null');
+            $table->timestamps();
         });
     }
 
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mq135_sensors');
+        Schema::dropIfExists('presenses');
     }
 };
